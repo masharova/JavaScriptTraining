@@ -1,8 +1,5 @@
-Array.prototype.without = function(... values){
-    return this.filter(item => !values.includes(item)) 
+function without(array, val) {
+    array = array.filter(item => !val.includes(item));
+    return array;
 }
-console.log([2, 1, 2, 3].without(1, 2));
-
-
-   
-
+console.log(without([2, 1, 2, 3], [1, 2]));

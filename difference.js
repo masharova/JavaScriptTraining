@@ -1,6 +1,5 @@
-Array.prototype.diff = function(a){
-    return this.filter(function(i){
-        return a.indexOf(i) < 0;
-    })
+function difference(array, values) {
+    array = array.filter(a => values.indexOf(a) < 0);
+    return array;
 }
-console.log([1,2,3,4,5,6].diff([3,4,5]));
+console.log(difference([1, 2, 3, 4, 5, 6], [3, 4, 5]));
