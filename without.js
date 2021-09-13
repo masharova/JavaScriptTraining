@@ -1,5 +1,4 @@
 function without(array, val) {
-    array = array.filter(item => !val.includes(item));
-    return array;
+    return array.filter(item => !val.includes(item));
 }
 console.log(without([2, 1, 2, 3], [1, 2]));
