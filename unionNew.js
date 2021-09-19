@@ -1,10 +1,11 @@
 function union(...args) {
-    let set = new Set(args[0]);
-    for (let index = 1; index < args.length; index++) {
-        for (let i = 0; i < args[index].length; i++) {
-            set.add(args[index][i]);
-        }
+    let allArgs = [];
+
+    for (let i = 0; i < args.length; i++) {
+        allArgs = allArgs.concat(args[i])
     }
+
+    let set = new Set(allArgs);
 
     return Array.from(set);
 }
