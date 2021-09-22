@@ -1,0 +1,21 @@
+{
+  "name": "cypress-fremework",
+  "version": "1.0.0",
+  "description": "Cypress project for beginners",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "login",
+    "test",
+    "for",
+    "filio"
+  ],
+  "author": "masharova",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.4.1"
+  }
+}
